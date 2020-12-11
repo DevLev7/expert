@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/jquery.maskedinput.js"></script>
+    <script src="/jquery.maskedinput.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>ЭкспертПро</title>
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <div class="header-inner">
+          <div class="header-inner__logo"><img src="../img/logo_big.svg" alt="" srcset=""/></div><a class="header-inner__location flex">
+            <div class="location__icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="21" viewBox="0 0 14 21">
+  <image id="navi" width="14" height="21" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAVCAYAAAB2Wd+JAAAABHNCSVQICAgIfAhkiAAAAX5JREFUOE+Nkj8ohlEUxn8fi/zZbBJKjFJKslgMShkYvtEgg01hUCf0ZEGymBgZxGBhMjFQomSRhIHVolDi0+F9dV2vP3e6Pff87j33PE+OYJlZLTAM9AJVydEtsAnMSbpOy3PpxszywDJQFl4W7B+AQUmrrr2DZtYHrP8AxHJe0lrOzCqBS6AiqrgDXgE/D9c9UO/gBDAZtdQPbEgqmFkPsAKUBzUTDh4DzYE4LGkhGpoPbD7Q9h18BEoCsVrSTQTWJd9J5WcHC9EfGiWdR2AjcBZoBQfdm5pAdL9GI3AaGA+0KwcXgaFA9En6sNxT72YAmAKKgpolB1uAw396mJa1pgHYBrr+CW9J6k7BJuAIKP4DfnHrJJ2GWZ0FRv4AZyWNfWY1yWspcOJx+gG+AJokedg/Qp4uM2sHdqMJ+rFPukPSXlr7BUxezmr5m7dZoMfPW25IbvcUeYtPYXffwORVt8Yt8tUpaSf+dyaYwAeeHEltWcP6DXwfu6SZLPANmzaBzvN2XCgAAAAASUVORK5CYII="/>
+</svg>
+
+            </div>
+            <div class="location__name">
+              <p>Северо-Кавказский и Южный Федеральный округ </p>
+            </div></a><a class="header-inner__phone flex">
+            <div class="phone__icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="17" viewBox="0 0 16 17">
+  <image id="tel" width="16" height="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAABHNCSVQICAgIfAhkiAAAAdZJREFUOE9900uIyFEUx/HPIImNsvGMkiRhiQ15ZENJkZXXUAqxIE3penQWippEUkoMO0ryWHkVsrGwQCnlsaGUlMWEPKYz3f/0N425m/v/3/M/3//vd865HVBKmYWzWI7uiDiY5zU2CafxAlci4l0Ty72jlDIHTzG+Bv5gWkR8rIDZuI8p+F1hXRHxswHcwpo2FTsj4nwFLMEXTMYhLMXDzImI3lTwA6MHAXoiYmspZQx6UykeYAd2Y3+1szkBfwcl52tExOGqYBG2Yxu+YjFOYXU+JyAPG/93cTwiUmIW9w4mogtjcR2P0iJe40IC7mFFVbElIi63OpCesyPjkLVIC6lkHnowIQEHcLImPcPCiBiwVUrJLrzCjfRd906swoYETMdbjKiQdRGRHw+sUsp7fEpXSJt7sCzrkNVNr9ewvma8wfyI+N6ysg+f6zCl9E04hhkNoJE5siadi4hdQ3SnrWpUqu4HVBVHcaSV1BkRF2ssizwXlyLiWxvcBiTxMbLvuX5hI7JG3fXsQ53Alw1kAFD/lD1/gpnDyE8FKyMiO9Y/ov+sUspU3MaCYSA3I2LtkICqJO9AjmtO3FBrb0Sc+S+gVdi8eXlxsuc5ys9xIiKuNt/0ASNVnspbYGSfAAAAAElFTkSuQmCC"/>
+</svg>
+
+            </div>
+            <div class="phone__name">
+              <p>8 (962)  <span>454-50-10</span></p>
+              <p>8 (918) <span>867-09-83</span></p>
+            </div></a>
+          <div class="header-inner__button">
+            <button class="btn btn-click">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+      <div class="callback-form" id="callback-form"><a class="close-form"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 26 26" width="26px" height="26px"><path d="M 21.734375 19.640625 L 19.636719 21.734375 C 19.253906 22.121094 18.628906 22.121094 18.242188 21.734375 L 13 16.496094 L 7.761719 21.734375 C 7.375 22.121094 6.746094 22.121094 6.363281 21.734375 L 4.265625 19.640625 C 3.878906 19.253906 3.878906 18.628906 4.265625 18.242188 L 9.503906 13 L 4.265625 7.761719 C 3.882813 7.371094 3.882813 6.742188 4.265625 6.363281 L 6.363281 4.265625 C 6.746094 3.878906 7.375 3.878906 7.761719 4.265625 L 13 9.507813 L 18.242188 4.265625 C 18.628906 3.878906 19.257813 3.878906 19.636719 4.265625 L 21.734375 6.359375 C 22.121094 6.746094 22.121094 7.375 21.738281 7.761719 L 16.496094 13 L 21.734375 18.242188 C 22.121094 18.628906 22.121094 19.253906 21.734375 19.640625 Z"/></svg></a>
+        <form class="flex" action="">
+          <input type="text" name="" placeholder="Введите Имя"/>
+          <input type="text" name="" placeholder="Введите Email"/>
+          <input type="text" name="" id="phone" placeholder="Введите номер телефона"/>
+          <button class="btn-2">Заказать</button>
+        </form>
+      </div>
+    </header>
+    <div class="about-block">
+      <div class="content">
+        <div class="about-block__inner flex">
+          <div class="about-block__info">
+            <h3>КАЧЕСТВЕННОЕ ПРОВЕДЕНИЕ</h3>
+            <h1>НЕЗАВИСИМЫХ ЭКСПЕРТИЗ</h1>
+            <h3>НА ЛЮБОМ ЭТАПЕ ЮРИДИЧЕСКОГО СПОРА</h3>
+            <div class="info__order">
+              <ul>
+                <li>до суда</li>
+                <li>на суде</li>
+                <li>рецензирование заключений</li>
+              </ul>
+              <button class="btn" id="scroll">Заказать экспертизу</button>
+            </div>
+          </div>
+          <div class="about-block__person flex"><img src="../img/Абанеев Никита.svg" alt=""/>
+            <div class="person__info">
+              <div class="info__fio"> 
+                <p>Абанеев Никита Юрьевич</p>
+              </div>
+              <div class="info__profi">
+                <p>Управляющий партнер, <br> ведущий эксперт-землеустроитель,<br> эксперт-строитель</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feedback-block">
+      <div class="content">
+        <div class="feedback-block__inner">
+          <div class="feedback-block__info">
+            <h3>90% ВСЕХ СТРОИТЕЛЬНЫХ И ЗЕМЕЛЬНЫХ КОНТРАКТОВ <br> ЗАКАНЧИВАЮТСЯ СПОРАМИ, РАЗРЕШИТЬ КОТОРЫЕ ПОЗВОЛЯЕТ</h3>
+            <div class="feedback-block__title flex">
+              <h1> ЭКСПЕРТИЗА</h1>
+              <div class="feedback-block__subtitle">
+                <p>От качества ее проведения и от экспертности <br> компании-исполнителя будет зависеть результа</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-block__form flex formwrap">
+            <div class="feedback-block__form__works">
+              <div class="feedback-block__work flex">
+                <div class="work"><img src="../img/Строительная.svg" alt=""/>
+                  <p>СТРОИТЕЛЬНО-ТЕХНИЧЕСКАЯ</p>
+                </div>
+                <div class="ellipse flex"><img src="../img/Ellipse 2 copy.svg" alt=""/><img class="rest" src="../img/Rectangle 6.svg" alt=""/><img src="../img/Ellipse 2.svg" alt=""/></div>
+              </div>
+              <div class="feedback-block__work2 flex">
+                <div class="work"><img src="../img/Землеустроительная.svg" alt=""/>
+                  <p>ЗЕМЛЕУСТРОИТЕЛЬНАЯ</p>
+                </div>
+                <div class="ellipse flex"><img src="../img/Ellipse 2 copy.svg" alt=""/><img class="rest" src="../img/Rectangle 6 copy.svg" alt=""/><img src="../img/Ellipse 2.svg" alt=""/></div>
+              </div>
+              <div class="feedback-block__work3 flex">
+                <div class="work"><img src="../img/Оценочная.svg" alt=""/>
+                  <p>ОЦЕНОЧНАЯ</p>
+                </div>
+                <div class="ellipse flex"><img src="../img/Ellipse 2 copy.svg" alt=""/><img class="rest" src="../img/Rectangle 6.svg" alt=""/><img src="../img/Ellipse 2.svg" alt=""/></div>
+              </div>
+            </div>
+            <div class="feedback-block__form__feedback flex"><img class="circle" src="../img/3_4_круг.svg" alt=""/>
+              <form action="">
+                <h6>В некоторых случаях вы можете <span> ПОЛУЧИТЬ ПРЕДВАРИТЕЛЬНУЮ ОЦЕНКУ </span> вашей ситуации у эксперта</h6>
+                <h5>Имя</h5>
+                <input type="text" name=""/>
+                <h5>Телефон <span>(Обязательно)</span></h5>
+                <input type="text" name="" id="phone1"/>
+                <h5>Email <span>(Обязательно)</span></h5>
+                <input type="email" name=""/>
+                <button class="btn">Получить оценку</button>
+                <p>*Гарантия конфиденциальности.</p>
+              </form><img class="place" src="../img/1_2_круг.svg" alt=""/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>

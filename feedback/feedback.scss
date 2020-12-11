@@ -1,0 +1,500 @@
+@import "../base/base.scss";
+
+.feedback-block{
+    width: 100%;
+    background-color: $white;
+    .content{
+        padding: 74px 0 80px (272/1920)*100%;
+        .feedback-block__inner{
+            .feedback-block__info{
+                h3{
+                    @include font('PT Sans Caption',40px,55px,$black ,600 );
+                    margin-bottom: 10px;
+                }
+                @media(max-width:1620px){
+                    
+                    h3{
+                        @include font('PT Sans Caption',35px,50px,$black ,600 );
+                    }
+                        }
+                @media(max-width:1351px){
+            
+                    h3{
+                        @include font('PT Sans Caption',30px,50px,$black ,600 );
+                    }
+                        }
+                @media(max-width:1024px){
+    
+                    h3{
+                        @include font('PT Sans Caption',20px,40px,$black ,600 );
+                    }
+                        }
+                @media(max-width:500px){
+
+                    h3{
+                        @include font('PT Sans Caption',15px,30px,$black ,600 );
+                    }
+                        }
+                @media(max-width:320px){
+
+                    h3{
+                        @include font('PT Sans Caption',9px,15px,$black ,600 );
+                    }
+                        }
+                .feedback-block__title{
+                    h1{
+                        @include font('PT Sans Caption',100px,60px,$yellow ,600 );
+                        margin-top: 17px;
+                    }
+                    
+                    .feedback-block__subtitle{
+                        margin-left: 21px;
+                        background-color: #7D7D7D;
+                        @include font('PT Sans Caption',25px,36px,$white ,400 );
+                        width: 100%;
+                        padding: 10px 0 10px 20px;
+                    }
+                    @media(max-width:1620px){
+                        .feedback-block__subtitle{
+                            @include font('PT Sans Caption',20px,30px,$white ,400 );
+                                }
+                        h1{
+                            @include font('PT Sans Caption',90px,60px,$yellow ,600 );
+                        }
+                            }
+                    @media(max-width:1351px){
+                        .feedback-block__subtitle{
+                            @include font('PT Sans Caption',17px,30px,$white ,400 );
+                                }
+                        h1{
+                            @include font('PT Sans Caption',85px,60px,$yellow ,600 );
+                        }
+                            }
+                    @media(max-width:1024px){
+                        .feedback-block__subtitle{
+                            @include font('PT Sans Caption',14px,30px,$white ,400 );
+                                }
+                        h1{
+                            @include font('PT Sans Caption',70px,60px,$yellow ,600 );
+                        }
+                            }
+                    @media(max-width:771px){
+                        .feedback-block__subtitle{
+                            @include font('PT Sans Caption',12px,20px,$white ,400 );
+                                }
+                        h1{
+                            @include font('PT Sans Caption',50px,60px,$yellow ,600 );
+                        }
+                            }
+                    @media(max-width:500px){
+                        .feedback-block__subtitle{
+                            @include font('PT Sans Caption',9px,15px,$white ,400 );
+                                }
+                        h1{
+                            @include font('PT Sans Caption',25px,30px,$yellow ,600 );
+                        }
+                            }
+                    @media(max-width:320px){
+                        .feedback-block__subtitle{
+                            @include font('PT Sans Caption',6px,12px,$white ,400 );
+                            padding: 5px 0 5px 10px;
+                            margin-left: 10px;
+                                }
+                        h1{
+                            @include font('PT Sans Caption',15px,15px,$yellow ,600 );
+                            margin-top: 10px;
+                        }
+                            }
+                }
+            }
+            .feedback-block__form{
+                margin-top: 45px;
+                .feedback-block__form__works{
+                    // width: 43%;
+                    
+                    .feedback-block__work{
+                        
+                        .ellipse{
+                            
+                            margin-top: -4px;
+                            margin-left: -84px;
+                            @media(max-width:1760px){
+                                .rest{
+                                    width: 439px ;
+                                        }
+                                    }
+                            @media(max-width:1620px){
+                                .rest{
+                                    width: 300px ;
+                                        }
+                                    }
+                            @media(max-width:1351px){
+                                .rest{
+                                    width: 150px ;
+                                        }
+                                    }
+                        }
+                        @media(max-width:1024px){
+                            .ellipse{
+                                margin-left: -220px;
+                                    }
+                                }
+                        p{
+                            @include font('PT Sans Caption',24px,36px,$black ,400 ); 
+                            width: 361px;
+                        }
+                    @media(max-width:1024px){
+                        .work{
+                            img{
+                                width: 150px;
+                            }
+                                }
+                        p{
+                            @include font('PT Sans Caption',18px,36px,$black ,400 ); 
+                            }
+                            }
+                    }
+                    @media(max-width:1024px){
+                        .feedback-block__work{
+                            margin-bottom: 70px;
+                            margin-top: 15px;
+                                }
+                            }
+                    @media(max-width:771px){
+                        .feedback-block__work{
+                            display: none;
+                                }
+                            }
+                    .feedback-block__work2{
+                        margin-left: 254px;
+                        .ellipse{
+                            
+                            margin-top: -20px;
+                            margin-left: -11px;
+                            @media(max-width:1760px){
+                                .rest{
+                                    width: 60px ;
+                                        }
+                                    }
+                            
+                        }
+                        @media(max-width:1024px){
+                            .ellipse{
+                                margin-left: -62px;
+                                    }
+                            
+                                }
+                    
+                        p{
+                            @include font('PT Sans Caption',25px,36px,$black ,400 ); 
+                        }
+                    @media(max-width:1024px){
+                        .work{
+                            img{
+                                width: 150px;
+                            }
+                                }
+                        p{
+                            @include font('PT Sans Caption',18px,36px,$black ,400 ); 
+                            }
+                            }
+                    }
+                    @media(max-width:1620px){
+                        .feedback-block__work2{
+                            margin-left: 120px;
+                                }
+                            }
+                    @media(max-width:1351px){
+                        .feedback-block__work2{
+                            margin-left: -28px;
+                                }
+                            }
+                    @media(max-width:1024px){
+                        .feedback-block__work2{
+                            margin-left: -16px;
+                            margin-bottom: 90px;
+                                }
+                            }
+                    @media(max-width:771px){
+                        .feedback-block__work2{
+                            display: none;
+                                }
+                            }
+                    .feedback-block__work3{
+                       
+                        .ellipse{
+                            
+                            margin-top: -44px;
+                            margin-left: -11px;
+                            @media(max-width:1760px){
+                                .rest{
+                                    width: 439px ;
+                                        }
+                                    }
+                            @media(max-width:1620px){
+                                .rest{
+                                    width: 300px ;
+                                        }
+                                    }
+                            @media(max-width:1351px){
+                                .rest{
+                                    width: 150px ;
+                                        }
+                                    }        
+                        }
+                        p{
+                            @include font('PT Sans Caption',25px,36px,$black ,400 ); 
+                        }
+                    @media(max-width:1024px){
+                        .work{
+                            img{
+                                width: 150px;
+                            }
+                                }
+                        p{
+                            @include font('PT Sans Caption',18px,36px,$black ,400 ); 
+                            }
+                            }
+                        
+                    }
+                    @media(max-width:771px){
+                        .feedback-block__work3{
+                            display: none;
+                                }
+                            }
+                }
+                .feedback-block__form__feedback{
+                    margin-left: (-150/1920)*100%;
+                    position: relative;
+                    form{
+                        width: 351px;
+                        position: absolute;
+                        left: 129px;
+                        top: 125px;
+                        h6{
+                            @include font('PT Sans Caption',16px,25px,$black ,400 );
+                            padding-left: 15px;
+                            margin-bottom: 10px;
+                            span{
+                                text-transform: uppercase;
+                                font-weight: 600;
+                            }
+                        
+                        }
+                        
+                        h5{
+                            @include font('PT Sans Caption',16px,25px,$black ,400 );
+                            padding-left: 15px;
+                            span{
+                                color: $yellow;
+                            }
+                        }
+                        p{
+                            @include font('PT Sans Caption',16px,25px,#7D7D7D ,400 );
+                            padding-left: 15px;
+                            margin-top: 7px;
+                        }
+                        input{
+                            display: block;
+                            width: 100%;
+                            font-size: 16px;
+                            padding: 0 20px;
+                            height: 70px;
+                            background: #F7F7F7;
+                            border: 1px solid #F7F7F7;
+                            border-radius: 29px;
+                            margin: 0 0 20px 0;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            &:focus,&:active{
+                                outline: none;
+                            }
+                        }
+                        .btn{
+                            display: inline-block;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            @include font('PT Sans Caption',25px,30px,$black ,400 );
+                            border: 1px solid $yellow;
+                            cursor: pointer;
+                            text-decoration: none;
+                            text-align: center;
+                            padding: 13px 51px 13px 53px;
+                            border-radius: 37px;
+                            background-color: $yellow;
+                            text-transform: uppercase;
+                            box-shadow: 0 0 40px 40px $yellow inset, 0 0 0 0 $yellow;
+                            -webkit-transition: all 150ms ease-in-out;
+                            transition: all 150ms ease-in-out;
+                            &:focus,&:active{
+                                outline: none;
+                            }
+                            &:hover{
+                                transition: .4s linear;
+                                opacity: 0.9;
+                                background-color: $white;
+                                color: $black;
+                                box-shadow: 0 0 10px 0 $yellow inset, 0 0 10px 4px $yellow;
+                            }
+                        }
+                    }
+                    
+                    @media(max-width:1350px){
+                        form{
+                            margin-left: -2.8%;
+                            }
+                        }
+                    @media(max-width:1024px){
+                        form{
+                            top: 75px;
+                            left: 144px;
+                            
+                            }
+                        }
+                    .place{
+                        position: absolute;
+                        right: 24px;
+                        top: 105px;
+                    }
+                    @media(max-width:1024px){
+                        .place{
+                            top: 48px;
+                            }
+                        }
+                    @media(max-width:500px){
+                        .circle{
+                            width: 430px;
+                        }
+                        .place{
+                            width: 181px;
+                            }
+                            
+                        form{
+                            width: 250px;
+                            
+                            left: 90px;
+                            top: 75px;
+                            h6{
+                                @include font('PT Sans Caption',11px,25px,$black ,400 );
+                                
+                            
+                            }
+                            
+                            h5{
+                                @include font('PT Sans Caption',13px,25px,$black ,400 );
+                                
+                            }
+                            p{
+                                @include font('PT Sans Caption',12px,25px,#7D7D7D ,400 );
+                                
+                                margin-top: 2px;
+                            }
+                            input{
+                                
+                                width: 100%;
+                                font-size: 15px;
+                                padding: 0;
+                                height: 25px;
+                                
+                                margin: 0 0 3px 0;
+                                
+                            }
+                            .btn{
+                               
+                                @include font('PT Sans Caption',15px,30px,$black ,400 );
+                                margin-top: 15px;
+                                padding: 1px 49px 1px 49px;
+                                
+                            }
+                        }
+                        }
+                    @media(max-width:320px){
+                        .circle{
+                            width: 280px;
+                        }
+                        .place{
+                            width: 116px;
+                            top:30px;
+                            right: 10px;
+                            }
+                            
+                        form{
+                            width: 175px;
+                            left: 49px;
+                            top: 43px;
+                            h6{
+                                @include font('PT Sans Caption',8px,12px,$black ,400 );
+                                
+                            
+                            }
+                            
+                            h5{
+                                @include font('PT Sans Caption',8px,20px,$black ,400 );
+                                
+                            }
+                            p{
+                                @include font('PT Sans Caption',8px,20px,#7D7D7D ,400 );
+                                
+                                margin-top: 0px;
+                            }
+                            input{
+                                
+                                width: 89%;
+                                font-size: 10px;
+                                padding: 0;
+                                height: 17px;
+                                
+                                margin: 0 0 3px 0;
+                                
+                            }
+                            .btn{
+                               
+                                @include font('PT Sans Caption',10px,10px,$black ,400 );
+                                margin-top: 8px;
+                                padding: 2px 36px 2px 36px;
+                                
+                            }
+                        }
+                        }
+                }
+                
+                @media(max-width:1350px){
+                    .feedback-block__form__feedback{
+                        margin-left: -10.8%;
+                        }
+                    }
+                @media(max-width:1024px){
+                    .feedback-block__form__feedback{
+                        margin-left: -12.8%;
+                        }
+                    }
+                @media(max-width:771px){
+                    .feedback-block__form__feedback{
+                        margin-left: 0px;
+                        }
+                    }
+                @media(max-width:500px){
+                    .feedback-block__form__feedback{
+                        margin-left: -13px;
+                        }
+                    }
+                @media(max-width:320px){
+                    .feedback-block__form__feedback{
+                        margin-left: -25px;
+                        }
+                    }
+                
+            } 
+        }
+    }
+    @media(max-width:771px){
+        .content{
+            padding: 34px 0 80px (272/1920)*100%;
+            }
+        }
+    @media(max-width:320px){
+        .content{
+            padding: 14px 0 80px (272/1920)*100%;
+            }
+        }
+}

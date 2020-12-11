@@ -1,0 +1,288 @@
+@import "../base/base.scss";
+
+header{
+    width: 100%;
+    background-color:$black;
+    .content{
+        max-width: 1920px;
+        padding: 0 (272/1920)*100%;
+        
+        .header-inner{
+            padding: 17px 0;
+            display: grid;
+            grid-template-columns: 2.6fr 1.3fr 1fr 2fr;
+            
+            a{
+                cursor: pointer;
+            }
+            .header-inner__location{
+                
+                .location__name{
+                    @include font('PT Sans Caption',16px,25px,$white ,400 );
+                    margin-left: 15px;
+                    }
+                @media(max-width:1476px){
+                    .location__name{
+                        display: none;
+                            }
+                        }
+            }
+            @media(max-width:1024px){
+                .header-inner__location{
+                    margin: auto 0;
+                    
+                        }
+                    }
+            @media(max-width:771px){
+                .header-inner__location{
+                    display: none;
+                    
+                        }
+                    }    
+            .header-inner__phone{
+                .phone__name{
+                    @include font('PT Sans Caption',16px,25px,$white ,400 );
+                    margin-left: 15px;
+                    span{
+                        color: $yellow;
+                    }
+                }
+                @media(max-width:1024px){
+                    .phone__name{
+                        display: none;
+                        
+                            }
+                        }
+                
+                
+            }
+            @media(max-width:1024px){
+                .header-inner__phone{
+                    margin: auto 0;
+                    
+                        }
+                    }
+            @media(max-width:771px){
+                .header-inner__phone{
+                    display: none;
+                    
+                        }
+                    }
+            .header-inner__button{
+                justify-self: center;
+                .btn{
+                    @include font('PT Sans Caption',16px,25px,$white ,400 );
+                    display: inline-block;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    border: 1px solid $yellow;
+                    cursor: pointer;
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 9px 78px 8px 77px;
+                    border-radius: 20px;
+                    background-color: transparent;
+                    text-transform: uppercase;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    -webkit-transition: color 150ms ease-in-out;
+                    transition: color 150ms ease-in-out;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        top: 0;
+                        left: 50%;
+                        -webkit-transform: translateX(-50%);
+                                transform: translateX(-50%);
+                        width: 0;
+                        height: 100%;
+                        background: $yellow;
+                        
+                        z-index: -1;
+                        -webkit-transition: width 150ms ease-in-out;
+                        transition: width 150ms ease-in-out;
+                      }
+                    &:active,
+                    &:focus{
+                        outline: none;
+                    }
+                    &:hover{
+                        
+                        
+                        color: $black;
+                    }
+                    &:hover:after {
+                        width: 120%;
+                        transition: .5s linear;
+                        
+                      }
+               }
+            @media(max-width:1476px){
+                .btn{
+                        padding: 9px 58px 8px 57px;
+                    }
+                }
+            @media(max-width:771px){
+                .btn{
+                        padding: 9px 33px 8px 33px;
+                        margin-left: 20px;
+                    }
+                }
+            @media(max-width:500px){
+                .btn{
+                        padding: 9px 10px 8px 10px;
+                        @include font('PT Sans Caption',12px,25px,$white ,400 );
+                    }
+                }
+            @media(max-width:320px){
+                .btn{
+                        padding: 1px 6px;
+                        @include font('PT Sans Caption',7px,25px,$white ,400 );
+                    }
+                }
+           
+            }
+            }
+        @media(max-width:1630px){
+            .header-inner{
+                grid-template-columns: 2fr 1.3fr 1fr 1.8fr;
+                }
+            }
+        @media(max-width:1476px){
+            .header-inner{
+                grid-template-columns: 2fr 0.2fr 1fr 1.8fr;
+                }
+                    }
+        @media(max-width:1024px){
+            .header-inner{
+                grid-template-columns: 2fr 0.2fr 0.2fr 1.8fr;
+                }
+                    }
+        @media(max-width:771px){
+            .header-inner{
+                grid-template-columns: 2fr  1.8fr;
+                }
+                    }
+        @media(max-width:500px){
+            .header-inner__logo{
+                img{
+                    width: 190px;
+                
+                    }}
+                }
+        @media(max-width:320px){
+            .header-inner__logo{
+                img{
+                    width: 115px;
+                
+                    }}
+                }
+        }
+        
+        
+        
+    }
+
+
+    .callback-form{
+        display: none;
+        border-radius: 10px;
+        position: fixed;
+        z-index: 2;
+        top: 33%;
+        left: 33%;
+        width: 500px;
+        height: auto;
+        background-color: $white;
+        padding: 30px 30px;
+        .close-form{
+            cursor: pointer;
+            float: right;
+        }
+        form{
+            margin-top: 15px;
+            flex-direction: column;
+            align-items: center;
+            
+            input{
+                
+                
+                width: 70%;
+                font-size: 16px;
+                padding: 0 20px;
+                height: 40px;
+                background: #e7e2e2cb;
+                border: 1px solid #bebdbdda;
+                border-radius: 22px;
+                margin: 0 0 20px 0;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                &:focus,&:active{
+                    outline: none;
+                }
+            }
+            .btn-2{
+                margin-top: 15px;
+                width: 70%;
+                display: inline-block;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                @include font('PT Sans Caption',15px,30px,$black ,400 );
+                border: 1px solid $yellow;
+                cursor: pointer;
+                text-decoration: none;
+                text-align: center;
+                padding: 10px 51px 10px 53px;
+                border-radius: 37px;
+                background-color: $yellow;
+                text-transform: uppercase;
+                &:focus,&:active{
+                    outline: none;
+                }
+                &:hover{
+                    transition: .4s linear;
+                    opacity: 0.9;
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+            @media(max-width:500px){
+                input {
+                    width: 89%;}}
+            @media(max-width:320px){
+                input {
+                    font-size: 10px;}
+                .btn-2{
+                    font-size: 12px;
+                    padding: 5px ;
+                }}
+        }
+    }
+    @media(max-width:1024px){
+        .callback-form{
+            left: 21%;
+            }
+                }
+    @media(max-width:771px){
+        .callback-form{
+            left: 14%;
+            top: 30%;;
+            }
+                }
+    @media(max-width:500px){
+        .callback-form{
+            left: 14%;
+            top: 30%;
+            width: 300px;
+            }
+                }
+    @media(max-width:320px){
+        .callback-form{
+            left: 14%;
+            top: 15%;
+            width: 200px;
+            }
+                }
+

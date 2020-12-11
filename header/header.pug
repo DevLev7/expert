@@ -1,0 +1,29 @@
+
+header
+    .content
+        .header-inner
+            .header-inner__logo
+                img(src="../img/logo_big.svg", alt="", srcset="")
+            a.header-inner__location.flex
+                .location__icon
+                    include ../img/navi.svg
+                .location__name
+                    p Северо-Кавказский и Южный Федеральный округ 
+            a.header-inner__phone.flex
+                .phone__icon
+                    include ../img/tel.svg
+                .phone__name
+                    p 8 (962)  
+                        span 454-50-10
+                    p 8 (918) 
+                        span 867-09-83
+            .header-inner__button
+                button.btn.btn-click Заказать звонок
+    .callback-form#callback-form
+            a.close-form
+                include ../img/close.svg
+            form(action="").flex
+                input(type="text", name="" placeholder="Введите Имя")
+                input(type="text", name="" placeholder="Введите Email")
+                input(type="text", name="" id="phone" placeholder="Введите номер телефона")
+                button.btn-2 Заказать
